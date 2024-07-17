@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Cyber Deck Inc</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #2b2b2b;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #0b9d12;
+        }
+
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div id="index-page">
+        <h1>Welcome to Cyber Deck</h1>
+        <p>Networking Essentials
+            The student has successfully achieved student level credential for completing Networking Essentials course administered by the undersigned instructor. The student was able to proficiently:
+            Explain the concept of network communication.Explain how clients access internet services.
+            Explain the basic requirements for getting online.Explain the function of common application layer services. Build a simple home network.Configure an integrated wireless router and wireless client to 
+            Explain the importance of standards and protocols in network connect securely to the internet. communications.Connect wireless PC clients to a wireless router.
+            Explain how communication occurs on Ethernet networks.Explain how to use security best practices to mitigate attacks.
+            Create a fully connected LAN.Configure basic network security.
+            Explain the DHCP address assignment process.Explain how to use the Cisco IOS.
+            Explain the principles of IPv4 and IPv6 address management.Build a simple computer network using Cisco devices.
+            .</p>
+        <a href="#page2" onclick="showPage('page2')">See More (Page 2)</a>
+    </div>
+
+    <div id="page2" style="display: none;">
+        <h1>Welcome to Page 2</h1>
+        <p>Networking Essentials
+            The student has successfully achieved student level credential for completing Networking Essentials course administered by the undersigned instructor. The student was able to proficiently:
+            Explain the concept of network communication.Explain how clients access internet services.
+            Explain the basic requirements for getting online.Explain the function of common application layer services. Build a simple home network.Configure an integrated wireless router and wireless client to 
+            Explain the importance of standards and protocols in network connect securely to the internet. communications.Connect wireless PC clients to a wireless router.
+            Explain how communication occurs on Ethernet networks.Explain how to use security best practices to mitigate attacks.
+            Create a fully connected LAN.Configure basic network security.
+            Explain the DHCP address assignment process.Explain how to use the Cisco IOS.
+            Explain the principles of IPv4 and IPv6 address management.Build a simple computer network using Cisco devices.
+            </p>
+        
+        <h2>Image</h2>
+        <img src="C:/Users/DELTA/desktop/Cyber Deck Website/Image 1.jpg" alt="Description of image" style="max-width: 100%; height: auto;">
+        
+        <h2>Video</h2>
+        <video controls style="max-width: 100%;">
+            <source src="C:/Users/DELTA/desktop/Cyber Deck Website/Video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        
+        <h2>Audio</h2>
+        <audio controls>
+            <source src="C:/Users/DELTA/desktop/Cyber Deck Website/Audio.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+        
+        <a href="#index-page" onclick="showPage('index-page')">Home</a>
+    </div>
+
+    <script>
+        function showPage(pageId) {
+            document.getElementById('index-page').style.display = 'none';
+            document.getElementById('page2').style.display = 'none';
+
+            document.getElementById(pageId).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
